@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(imshey2.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width:80px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #FF5757 ; 
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    position: absolute;
+    text-align: left;
+    left: 40;
+    font-size: 60px;
+    margin-top: -200px;
+
+}
+.content h2{
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    text-align: left;
+    left: 30;
+    font-size: 30px;
+    margin-top: -10;
+    padding-left: 43px ;
+}
+.content h3{
+    position:absolute;
+    text-align: left;
+    left: 30;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left: 43px;
+    letter-spacing: 3px;
+    font-weight: 130;
+}
+.content p{
+    position: absolute;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 50;
+    margin-bottom: 50;
+    font-weight: 100;
+    line-height: 20p;
+    padding-top: 50px;
+    padding-right: 600px;
+    padding-left: 10px;
+    left: 60;
+    letter-spacing: 3px;
+ 
+
+}
+
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #FF5757;
+    background: transparent;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #FF5757;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width:100%;
+}
+button:hover{
+    border: none;
+
+}
